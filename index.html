@@ -5,15 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Book your stay at Mulshi Villa Resort, Mulshi Lake. Luxurious villa resort with scenic views, affordable prices, organic dining, and adventure activities.">
-    <meta name="keywords" content="resort, villa, Mulshi Lake, Pune, private stay, affordable, organic dining, adventure">
+    <title>Mulshi Villa Resort | Luxurious Stay Near Mulshi Lake, Pune | Book Now</title>
+    <meta name="description" content="Experience luxury at Mulshi Villa Resort near Mulshi Lake, Pune. Enjoy private villas, swimming pool, organic dining, adventure activities, and scenic views. Affordable rates, free parking, 24/7 service. Book your serene escape today!">
+    <meta name="keywords" content="Mulshi Villa Resort, Mulshi Lake, Pune resort, luxury villa, private pool, organic dining, adventure activities, affordable stay, scenic views, book villa resort">
     <meta name="author" content="Mulshi Villa Resort">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://www.mulshivilla.com/"> <!-- Replace with actual URL when deployed -->
 
-    <title>Mulshi Villa Resort | Mulshi Lake</title>
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Mulshi Villa Resort | Luxurious Stay Near Mulshi Lake, Pune">
+    <meta property="og:description" content="Discover serenity at Mulshi Villa Resort with private villas, pool, and breathtaking views of Mulshi Lake. Book your affordable, luxurious escape now!">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBRQvxynbNQP0pY8_5j_GJTCrubCIbKtxHFNRe58HvgNPKMtcFb9X1-YjeXNHS73eNDjyJ-ysMSJlijkmFwAtVnReVnJsncNzNUl_NxRR28utZR_z_Ky1J4Jg_JzAGEiocLz0udei8nI-e=w1200-h800-k-no">
+    <meta property="og:url" content="https://www.mulshivilla.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mulshi Villa Resort">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mulshi Villa Resort | Luxurious Stay Near Mulshi Lake, Pune">
+    <meta name="twitter:description" content="Experience luxury at Mulshi Villa Resort near Mulshi Lake, Pune. Enjoy private villas, swimming pool, organic dining, and adventure activities. Book now!">
+    <meta name="twitter:image" content="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBRQvxynbNQP0pY8_5j_GJTCrubCIbKtxHFNRe58HvgNPKMtcFb9X1-YjeXNHS73eNDjyJ-ysMSJlijkmFwAtVnReVnJsncNzNUl_NxRR28utZR_z_Ky1J4Jg_JzAGEiocLz0udei8nI-e=w1200-h800-k-no">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon"> <!-- Replace with actual favicon URL -->
 
     <!-- Font Awesome & Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) for Local Business/Hotel -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Hotel",
+        "name": "Mulshi Villa Resort",
+        "description": "Luxurious villa resort near Mulshi Lake, Pune, offering private stays, swimming pool, organic dining, and adventure activities.",
+        "url": "https://www.mulshivilla.com/",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mulshi Villa Resort",
+            "addressLocality": "Mulshi",
+            "addressRegion": "Maharashtra",
+            "postalCode": "412108",
+            "addressCountry": "IN"
+        },
+        "telephone": "+919270278880",
+        "email": "info@mulshivilla.com",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBRQvxynbNQP0pY8_5j_GJTCrubCIbKtxHFNRe58HvgNPKMtcFb9X1-YjeXNHS73eNDjyJ-ysMSJlijkmFwAtVnReVnJsncNzNUl_NxRR28utZR_z_Ky1J4Jg_JzAGEiocLz0udei8nI-e=w1200-h800-k-no",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "18.489451",
+            "longitude": "73.509075"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "150"
+        },
+        "amenityFeature": [
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Private Swimming Pool"
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Free Parking"
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "24/7 Service"
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Organic Dining"
+            }
+        ]
+    }
+    </script>
 
     <style>
         
@@ -306,7 +376,7 @@
             display: grid;
             gap: 20px;
         }
-        #booking input, #booking textarea {
+        #booking input, #booking select, #booking textarea {
             padding: 12px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -382,7 +452,7 @@
             font-size: 24px;
             z-index: 1000;
             transition: transform 0.3s;
-            text-decoration: none; /* Added to remove underline */
+            text-decoration: none;
         }
         .whatsapp-btn:hover {
             transform: scale(1.1);
@@ -462,73 +532,71 @@
                     <p>Whether you're seeking relaxation or adventure, Mulshi Villa Resort is your gateway to rejuvenation with its strategic location that allows you to explore Mulshi without having to travel far.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzEDjK9wX7HBvoqdig89sn7c9cNjxQ1nDkBRmV9GS1TbEdSgTVJV5HsDdOeaBBKoJjRxoJMUmOnjx7IIkhm2feFqUa0WnbF42CyrjoONy_YlxZCASPtLeGZURD7SDomN0fHMFTXAhlegzTn=w1200-h800-k-no" alt="Mulshi Villa Resort">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzEDjK9wX7HBvoqdig89sn7c9cNjxQ1nDkBRmV9GS1TbEdSgTVJV5HsDdOeaBBKoJjRxoJMUmOnjx7IIkhm2feFqUa0WnbF42CyrjoONy_YlxZCASPtLeGZURD7SDomN0fHMFTXAhlegzTn=w1200-h800-k-no" alt="Mulshi Villa Resort - Serene villa with lake views" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-      <!-- ===================== Facilities Section ===================== -->
-<section id="facilities" class="facilities">
-    <div class="container">
-        <div class="section-title"><h2>Our Facilities</h2></div>
-        <div class="facilities-container">
-            <div class="facility-card">
-                <div class="facility-icon"><i class="fas fa-car"></i></div>
-                <h3>Free Parking</h3>
-                <p>Secure parking available for all guests at no additional cost.</p>
-            </div>
-            <div class="facility-card">
-                <div class="facility-icon"><i class="fas fa-concierge-bell"></i></div>
-                <h3>24/7 Service</h3>
-                <p>Round-the-clock concierge and room service for your convenience.</p>
-            </div>
-            <div class="facility-card">
-                <div class="facility-icon"><i class="fas fa-utensils"></i></div>
-                <h3>Food Options</h3>
-                <p>Optional pure veg and non-veg food packages starting @₹1,599 per person.</p>
-            </div>
-            <div class="facility-card">
-                <div class="facility-icon"><i class="fas fa-swimming-pool"></i></div>
-                <h3>Private Pool</h3>
-                <p>Relax in your private pool in the backyard of the villa.</p>
-            </div>
-            <div class="facility-card">
-                <div class="facility-icon"><i class="fas fa-tree"></i></div>
-                <h3>Lush Green Lawn</h3>
-                <p>Spacious lawn area where you can comfortably host 8-10 people.</p>
+    <!-- ===================== Facilities Section ===================== -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <div class="section-title"><h2>Our Facilities</h2></div>
+            <div class="facilities-container">
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-car"></i></div>
+                    <h3>Free Parking</h3>
+                    <p>Secure parking available for all guests at no additional cost.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-concierge-bell"></i></div>
+                    <h3>24/7 Service</h3>
+                    <p>Round-the-clock concierge and room service for your convenience.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Food Options</h3>
+                    <p>Optional pure veg and non-veg food packages starting @₹1,599 per person.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-swimming-pool"></i></div>
+                    <h3>Private Pool</h3>
+                    <p>Relax in your private pool in the backyard of the villa.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-tree"></i></div>
+                    <h3>Lush Green Lawn</h3>
+                    <p>Spacious lawn area where you can comfortably host 8-10 people.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===================== Gallery Section ===================== -->
-<section id="gallery" class="gallery">
-    <div class="container">
-        <div class="section-title"><h2>Gallery</h2></div>
-        <div class="gallery-container">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBRQvxynbNQP0pY8_5j_GJTCrubCIbKtxHFNRe58HvgNPKMtcFb9X1-YjeXNHS73eNDjyJ-ysMSJlijkmFwAtVnReVnJsncNzNUl_NxRR28utZR_z_Ky1J4Jg_JzAGEiocLz0udei8nI-e=w1200-h800-k-no" alt="Mulshi Villa Resort Image 1" onclick="openLightbox(this.src)">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxII9RAUjD9x3wtYPZs7TrldMqsHtQHndf2c798Z5I4VZ715NSEl1Ws-O7l9SmljPx1WTeBC15OJSHRIXCPMwBGwKbR520gc3KQRIO7ZmqSpdzHVRAz8MlHlTI8wgsx1DWE41GrZw6R5jM=w1200-h800-k-no" alt="Mulshi Villa Resort Image 2" onclick="openLightbox(this.src)">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzEZG2tvJt0T5Lpy5svDLuhKgD0kyh5lHuJF8j-vH-RO9ivdSqaPs1BXQBsYwnGXFKoWEzI_fPhrFQs0mMDnw2yonPXYiaUl4ZHJ0ARgmBQbuviswEyMPclplX_4uyLCUzdxSHSKaMop4VS=w1200-h800-k-no" alt="Mulshi Villa Resort Image 3" onclick="openLightbox(this.src)">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBZBJOPDrqNtGjfPM6BhMfpEgTcAfJPgP9mWhAEhtGRLw2mPwe7xhrDOZ1VY0hFXQtI1NpXjt_A3WUtvOy2EoASIEImfuQDNkHBJhSkEGORnoNfrsefs7pyJY64-EyETy_ELFzdW2pIDRg=w1200-h800-k-no" alt="Mulshi Villa Resort Image 4" onclick="openLightbox(this.src)">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzEDjK9wX7HBvoqdig89sn7c9cNjxQ1nDkBRmV9GS1TbEdSgTVJV5HsDdOeaBBKoJjRxoJMUmOnjx7IIkhm2feFqUa0WnbF42CyrjoONy_YlxZCASPtLeGZURD7SDomN0fHMFTXAhlegzTn=w1200-h800-k-no" alt="Mulshi Villa Resort Image 6" onclick="openLightbox(this.src)">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwR7sC92tkOyUwFqsHlDf--lhH9e_gzyI6dLI2rs23CpVPAX_9DED-NOBoumxDv99kWYeOE5umQQTnphKUMdFYM8Mbt2UHkEhiL9G-swpp2fHo-26jKLTplK_tHpx5QUAhnnaDdhdK4dSA=w203-h136-k-no" alt="Mulshi Villa Resort Image 7" onclick="openLightbox(this.src)">
+    <!-- ===================== Gallery Section ===================== -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title"><h2>Gallery</h2></div>
+            <div class="gallery-container">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBRQvxynbNQP0pY8_5j_GJTCrubCIbKtxHFNRe58HvgNPKMtcFb9X1-YjeXNHS73eNDjyJ-ysMSJlijkmFwAtVnReVnJsncNzNUl_NxRR28utZR_z_Ky1J4Jg_JzAGEiocLz0udei8nI-e=w1200-h800-k-no" alt="Mulshi Villa Resort - Exterior view with lake" onclick="openLightbox(this.src)" loading="lazy">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxII9RAUjD9x3wtYPZs7TrldMqsHtQHndf2c798Z5I4VZ715NSEl1Ws-O7l9SmljPx1WTeBC15OJSHRIXCPMwBGwKbR520gc3KQRIO7ZmqSpdzHVRAz8MlHlTI8wgsx1DWE41GrZw6R5jM=w1200-h800-k-no" alt="Mulshi Villa Resort - Interior living area" onclick="openLightbox(this.src)" loading="lazy">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzEZG2tvJt0T5Lpy5svDLuhKgD0kyh5lHuJF8j-vH-RO9ivdSqaPs1BXQBsYwnGXFKoWEzI_fPhrFQs0mMDnw2yonPXYiaUl4ZHJ0ARgmBQbuviswEyMPclplX_4uyLCUzdxSHSKaMop4VS=w1200-h800-k-no" alt="Mulshi Villa Resort - Swimming pool" onclick="openLightbox(this.src)" loading="lazy">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBZBJOPDrqNtGjfPM6BhMfpEgTcAfJPgP9mWhAEhtGRLw2mPwe7xhrDOZ1VY0hFXQtI1NpXjt_A3WUtvOy2EoASIEImfuQDNkHBJhSkEGORnoNfrsefs7pyJY64-EyETy_ELFzdW2pIDRg=w1200-h800-k-no" alt="Mulshi Villa Resort - Lawn area" onclick="openLightbox(this.src)" loading="lazy">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzEDjK9wX7HBvoqdig89sn7c9cNjxQ1nDkBRmV9GS1TbEdSgTVJV5HsDdOeaBBKoJjRxoJMUmOnjx7IIkhm2feFqUa0WnbF42CyrjoONy_YlxZCASPtLeGZURD7SDomN0fHMFTXAhlegzTn=w1200-h800-k-no" alt="Mulshi Villa Resort - Bedroom" onclick="openLightbox(this.src)" loading="lazy">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwR7sC92tkOyUwFqsHlDf--lhH9e_gzyI6dLI2rs23CpVPAX_9DED-NOBoumxDv99kWYeOE5umQQTnphKUMdFYM8Mbt2UHkEhiL9G-swpp2fHo-26jKLTplK_tHpx5QUAhnnaDdhdK4dSA=w203-h136-k-no" alt="Mulshi Villa Resort - Dining area" onclick="openLightbox(this.src)" loading="lazy">
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" src="" alt="Gallery Image">
+            </div>
         </div>
-        <div id="lightbox" class="lightbox">
-            <span class="close" onclick="closeLightbox()">&times;</span>
-            <img id="lightbox-img" src="">
-        </div>
-    </div>
-</section>
-
-
+    </section>
 
     <!-- ===================== Location Section ===================== -->
     <section id="location" class="location">
         <div class="container">
             <div class="section-title"><h2>Our Location</h2></div>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.000000000000!2d73.509075!3d18.489451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2a1000866ff5f:0x52795479dd3744fb!2sMulshi%20Villa%20resort!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.000000000000!2d73.509075!3d18.489451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2a1000866ff5f:0x52795479dd3744fb!2sMulshi%20Villa%20resort!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mulshi Villa Resort Location Map"></iframe>
             </div>
         </div>
     </section>
@@ -538,14 +606,34 @@
         <div class="container">
             <div class="section-title"><h2>Book Your Stay</h2></div>
             <form id="booking-form">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
-                <input type="tel" id="phone" placeholder="Phone Number" required>
-                <input type="date" id="checkin" placeholder="Check-in Date" required>
-                <div class="date-note">Please enter check-in date in DD-MM-YYYY format.</div>
-                <input type="date" id="checkout" placeholder="Check-out Date" required>
-                <div class="date-note">Please enter check-out date in DD-MM-YYYY format.</div>
-                <textarea id="message" placeholder="we'd love to know any specific requirements or requests that you may have..."></textarea>
+                <input type="text" id="name" placeholder="Full Name" required aria-label="Full Name">
+                <input type="email" id="email" placeholder="Email Address" required aria-label="Email Address">
+                <input type="tel" id="phone" placeholder="Phone Number" required aria-label="Phone Number">
+                <select id="guests" required aria-label="Number of Guests">
+                    <option value="">Select Number of Guests</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <select id="category" required aria-label="Category">
+                    <option value="">Select Category</option>
+                    <option value="Family">Family</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Corporate">Corporate</option>
+                    <option value="Friends">Friends</option>
+                </select>
+                <input type="date" id="checkin" placeholder="Check-in Date" required aria-label="Check-in Date">
+                <div class="date-note">Please enter check-in date</div>
+                <input type="date" id="checkout" placeholder="Check-out Date" required aria-label="Check-out Date">
+                <div class="date-note">Please enter check-out date</div>
+                <textarea id="message" placeholder="We'd love to know any specific requirements or requests that you may have..." aria-label="Special Requests"></textarea>
                 <button type="submit">Submit Booking Request</button>
             </form>
             <p id="message" style="text-align: center; margin-top: 20px;"></p>
@@ -559,7 +647,7 @@
                 <div class="footer-section">
                     <h3>Contact Us</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> +91-987-654-3210</li>
+                        <li><i class="fas fa-phone"></i> +919270278880</li>
                         <li><i class="fas fa-envelope"></i> info@mulshivilla.com</li>
                         <li><i class="fas fa-map-marker-alt"></i> Mulshi Villa Resort, Mulshi, Maharashtra 412108</li>
                     </ul>
@@ -568,10 +656,10 @@
                     <h3>Connect With Us</h3>
                     <p>Follow us on social media for updates and offers</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
             </div>
@@ -582,7 +670,7 @@
     </footer>
 
     <!-- WhatsApp Booking Button -->
-    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Mulshi%20Villa%20Resort." class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Mulshi%20Villa%20Resort." class="whatsapp-btn" target="_blank" aria-label="Book via WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -632,13 +720,15 @@
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
+            const guests = document.getElementById('guests').value;
+            const category = document.getElementById('category').value;
             const checkin = document.getElementById('checkin').value;
             const checkout = document.getElementById('checkout').value;
             const message = document.getElementById('message').value;
             const msgElement = document.getElementById('message');
 
-            if (name && email && phone && checkin && checkout) {
-                const whatsappMessage = `Hi, I would like to book a stay at Mulshi Villa Resort. Name: ${name}, Email: ${email}, Phone: ${phone}, Check-in: ${checkin}, Check-out: ${checkout}, Message: ${message}`;
+            if (name && email && phone && guests && category && checkin && checkout) {
+                const whatsappMessage = `Hi, I would like to book a stay at Mulshi Villa Resort. Name: ${name}, Email: ${email}, Phone: ${phone}, Guests: ${guests}, Category: ${category}, Check-in: ${checkin}, Check-out: ${checkout}, Message: ${message}`;
                 const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(whatsappMessage)}`;
                 window.open(whatsappUrl, '_blank');
                 msgElement.textContent = 'Redirecting to WhatsApp...';
